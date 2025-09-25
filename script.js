@@ -121,3 +121,4 @@ const swiper = new Swiper('.works-swiper', {
     1024: { slidesPerView: 3 }
   }
 });
+
