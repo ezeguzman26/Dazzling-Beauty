@@ -79,27 +79,14 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(()=> setPos( ba.getBoundingClientRect().left + ba.getBoundingClientRect().width/2 ), 100);
   }
 
-  /* --- Testimonials carousel (auto) --- */
-  const track = document.getElementById('testiTrack');
-  if (track) {
-    let idx = 0;
-    const items = Array.from(track.children);
-    function showTesti(i){
-      items.forEach((el, j)=> el.style.transform = `translateX(${(j - i)*100}%)`);
-    }
-    showTesti(0);
-    setInterval(()=> {
-      idx = (idx + 1) % items.length;
-      showTesti(idx);
-    }, 4200);
-  }
+ 
 
   /* --- Reserva form (simple handler: open whatsapp with prefilled sms) --- */
   const form = document.getElementById('reservaForm');
   form && form.addEventListener('submit', (e) => {
     e.preventDefault();
     const nombre = document.getElementById('nombre').value.trim();
-    const tel = document.getElementById('telefono').value.trim();
+    
     const servicio = document.getElementById('servicio').value;
     const fecha = document.getElementById('fecha').value;
     const mensaje = document.getElementById('mensaje').value.trim();
@@ -111,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Build whatsapp message (phone is example, replace with yours)
-    const phone = '5493512955491';
+    const phone = '5493512301846';
     const text = encodeURIComponent(
       `Reserva: %0ANombre: ${nombre}%0ATeléfono: ${tel}%0AServicio: ${servicio}%0AFecha: ${fecha}%0AMensaje: ${mensaje}`
     );
@@ -121,4 +108,16 @@ document.addEventListener('DOMContentLoaded', () => {
     form.reset();
   });
 
+});
+// Swiper inicialización
+const swiper = new Swiper('.works-swiper', {
+  loop: true,
+  spaceBetween: 20,
+  slidesPerView: 1,
+  pagination: { el: '.swiper-pagination', clickable: true },
+  navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+  breakpoints: {
+    640: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 }
+  }
 });
