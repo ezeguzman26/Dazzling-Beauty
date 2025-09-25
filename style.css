@@ -192,7 +192,10 @@ body{
 .card p{ color:#d0cdd0; font-size:0.95rem }
 .card-meta{ display:flex; justify-content:space-between; align-items:center; margin-top:12px }
 .tag{ background: rgba(255, 255, 255, 0.158); color:#eae7e9; padding:6px 10px; border-radius:999px; font-weight:700 }
-
+.card-cta{
+  color: #f03eac;
+  background: #f03eac; color:#000000; padding:6px 10px; border-radius:999px; font-weight:700 
+}
 
 /* GALLERY BEFORE/AFTER */
 .gallery{ padding:48px 0; text-align:center }
@@ -309,6 +312,7 @@ body{
 .swiper-pagination-bullet {
   background: #ff66b2; /* bolitas rosas */
 }
+
 
 
 
