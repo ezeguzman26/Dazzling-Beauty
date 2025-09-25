@@ -255,7 +255,6 @@ body{
   color: #ffffff; /* texto blanco */
   text-align: center;
   padding: 30px 20px;
-  padding-left: 0;
   font-size: 14px;
 }
 .divider-green {
@@ -266,6 +265,7 @@ body{
   margin: 40px auto; /* centrado y con espacio arriba y abajo */
   border-radius: 2px; /* bordes redondeados */
 }
+
 
 
 
