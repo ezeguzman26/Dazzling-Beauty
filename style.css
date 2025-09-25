@@ -223,7 +223,7 @@ body{
 .form-actions{ display:flex; gap:12px; justify-content:center; align-items:center; margin-top:8px }
 
 /* FOOTER */
-.site-footer{ padding:36px 0; background: transparent; border-top: 1px solid rgba(0, 0, 0, 0.03); margin-top:40px;}
+.site-footer{ padding:36px 0; background: transparent; border-top: 1px solid rgba(0, 0, 0, 0.03); margin-top:40px; background-color: black}
 .footer-grid{ display:flex; justify-content:space-between; gap:12px; align-items:center }
 
 /* WHATSAPP FAB */
@@ -250,13 +250,7 @@ body{
   .side-panel{ width:86%; transform:translateX(-100%) }
   .ba-img{ height:220px }
 }
-.site-footer {
-  background-color: #000000; /* fondo negro */
-  color: #ffffff; /* texto blanco */
-  text-align: center;
-  padding: 30px 20px;
-  font-size: 14px;
-}
+
 .divider-green {
   border: 0;
   height: 4px;
@@ -265,6 +259,7 @@ body{
   margin: 40px auto; /* centrado y con espacio arriba y abajo */
   border-radius: 2px; /* bordes redondeados */
 }
+
 
 
 
