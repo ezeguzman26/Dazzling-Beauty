@@ -223,7 +223,7 @@ body{
 .form-actions{ display:flex; gap:12px; justify-content:center; align-items:center; margin-top:8px }
 
 /* FOOTER */
-.site-footer{ padding:36px 0; background: transparent; border-top: 1px solid rgba(0, 0, 0, 0.03); margin-top:40px; background-color: #000000; text-align: center;}
+.site-footer{ color: white padding:36px 0; background: transparent; border-top: 1px solid rgba(0, 0, 0, 0.03); margin-top:40px; background-color: #000000; text-align: center;}
 .footer-grid{ display:flex; justify-content:center; gap:12px; align-items:center }
 
 /* WHATSAPP FAB */
@@ -259,6 +259,7 @@ body{
   margin: 40px auto; /* centrado y con espacio arriba y abajo */
   border-radius: 2px; /* bordes redondeados */
 }
+
 
 
 
