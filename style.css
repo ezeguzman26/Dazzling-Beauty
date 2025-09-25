@@ -205,12 +205,6 @@ body{
   box-shadow: 0 0 40px rgba(212,175,55,0.12);
 }
 
-/* TESTIMONIALS */
-.testimonials{ padding:48px 0; text-align:center }
-.testi-track{ display:flex; gap:20px; overflow:hidden; position:relative; min-height:120px; }
-.testi{ min-width:100%; padding:18px; border-radius:10px; background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); color:#eae7e9 }
-.testi p{ font-size:1rem; margin-bottom:8px }
-.testi cite{ color:#cfc9cf; font-size:.9rem }
 
 /* CONTACT */
 .contact{ padding:48px 0; text-align:center }
@@ -259,6 +253,7 @@ body{
   margin: 40px auto; /* centrado y con espacio arriba y abajo */
   border-radius: 2px; /* bordes redondeados */
 }
+
 
 
 
