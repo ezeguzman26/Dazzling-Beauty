@@ -297,7 +297,7 @@ body{
 }
 
 .swiper {
-  width: 50%;
+  width: 70%;
   padding: 20px 0;
 }
 
@@ -309,5 +309,6 @@ body{
 .swiper-pagination-bullet {
   background: #ff66b2; /* bolitas rosas */
 }
+
 
 
