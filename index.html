@@ -6,7 +6,12 @@
   <title>Dazzling Beauty</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="logo.png" />
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 </head>
+
+
 <body>
   <header class="site-header">
     <div class="container header-inner">
@@ -49,7 +54,7 @@
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-content">
         <h2 class="hero-title">Brillá con confianza</h2>
-        <p class="hero-sub">Uñas, pestañas, cejas y alisados — tratamientos premium con resultados visibles.</p>
+        <p class="hero-sub">Uñas, pestañas, cejas y tratamientos capilares — tratamientos premium con resultados visibles.</p>
         <div class="hero-ctas">
           <a class="btn btn-primary" href="#contact">Reservá tu turno</a>
           <a class="btn btn-ghost" href="#services">Ver servicios</a>
@@ -81,9 +86,9 @@
         <article class="card" data-aos="fade-up">
           <div class="card-icon">💅</div>
           <h4>Uñas Profesionales</h4>
-          <p>Manicuría y esmaltado semipermanente con técnicas de diseño personalizado. Durabilidad y acabado perfecto.</p>
+          <p>Manicuría y esmaltado semipermanente, soft gel, kapping gel, press on nails con técnicas de diseño personalizado. Durabilidad y acabado perfecto.</p>
           <div class="card-meta">
-            <span class="tag">Desde $1200</span>
+            <span class="tag">Desde $8000</span>
             <a class="card-cta" href="#contact">Reservar</a>
           </div>
         </article>
@@ -91,9 +96,9 @@
         <article class="card" data-aos="fade-up" data-aos-delay="100">
           <div class="card-icon">🌟</div>
           <h4>Pestañas</h4>
-          <p>Extensiones, volumen ruso y lifting para una mirada intensa y natural. Productos hipoalergénicos.</p>
+          <p>Extensiones y lifting para una mirada intensa y natural. Productos hipoalergénicos.</p>
           <div class="card-meta">
-            <span class="tag">Desde $1800</span>
+            <span class="tag">Desde $7000</span>
             <a class="card-cta" href="#contact">Reservar</a>
           </div>
         </article>
@@ -101,19 +106,19 @@
         <article class="card" data-aos="fade-up" data-aos-delay="200">
           <div class="card-icon">✨</div>
           <h4>Cejas</h4>
-          <p>Design, laminado y henna profesional para enmarcar tu rostro con precisión y estilo.</p>
+          <p>Diseño, laminado, perfilado y henna profesional para enmarcar tu rostro con precisión y estilo.</p>
           <div class="card-meta">
-            <span class="tag">Desde $900</span>
+            <span class="tag">Desde $5000</span>
             <a class="card-cta" href="#contact">Reservar</a>
           </div>
         </article>
 
         <article class="card" data-aos="fade-up" data-aos-delay="300">
           <div class="card-icon">💧</div>
-          <h4>Alisados</h4>
-          <p>Alisados progresivos y tratamientos nutritivos para un cabello sedoso y sin frizz por semanas.</p>
+          <h4>Tratamientos capilares</h4>
+          <p>Alisados progresivos, botox, keratina y tratamientos nutritivos para un cabello sedoso y sin frizz por semanas.</p>
           <div class="card-meta">
-            <span class="tag">Desde $4000</span>
+            <span class="tag">Desde $8000</span>
             <a class="card-cta" href="#contact">Reservar</a>
           </div>
         </article>
@@ -130,35 +135,58 @@
         <img src="img1.png" alt="Después" class="ba-img ba-after">
       </div>
       <p class="small-note">Arrastrá la linea del medio.</p>
+
+      <!-- TRABAJOS REALIZADOS -->
+<section id="works" class="works container">
+
+  <!-- Carrusel -->
+  <div class="swiper works-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="img3.png" alt="Trabajo 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="img4.png" alt="Trabajo 2">
+      </div>
+      <div class="swiper-slide">
+        <img src="img5.png" alt="Trabajo 3">
+      </div>
+      <div class="swiper-slide">
+        <img src="img6.png" alt="Trabajo 4">
+      </div>
+      <div class="swiper-slide">
+        <img src="img7.png" alt="Trabajo 4">
+      </div>
+    </div>
+
+    <!-- Controles -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
       
 
     </section>
 
 <hr class="divider-green">
+    
     <!-- CONTACT / RESERVATION -->
-    <section id="contact" class="contact container">
-      <h3 class="section-title">Reservá tu turno</h3>
-      <p class="section-sub">Completá el formulario o enviános un WhatsApp y te confirmamos.</p>
-
-      <form id="reservaForm" class="reserva-form" aria-label="Formulario de reserva">
-        <div class="form-grid">
-          <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
-          <input type="tel" name="telefono" id="telefono" placeholder="Teléfono / WhatsApp" required>
-          <select name="servicio" id="servicio" required>
-            <option value="">Elige un servicio</option>
-            <option value="uñas">Uñas</option>
-            <option value="pestañas">Pestañas</option>
-            <option value="cejas">Cejas</option>
-            <option value="alisados">Alisados</option>
-          </select>
-          <input type="date" name="fecha" id="fecha" required>
-        </div>
-        <textarea name="mensaje" id="mensaje" rows="3" placeholder="Algún detalle extra (opcional)"></textarea>
-        <div class="form-actions">
-          <button type="submit" class="btn btn-primary">Enviar reserva</button>
-          <a class="btn btn-ghost" href="https://wa.me/5493512955491" target="_blank" rel="noopener">Chatear por WhatsApp</a>
-        </div>
-      </form>
+   <section id="contacto" class="cta">
+    <div class="contact-container">
+      <h3>Reserva tu turno</h3>
+      </div>
+      <p></p>
+      <div class="contact-buttons">
+          <a href="https://wa.me/543512301846" class="contact-btn whatsapp-btn" target="_blank"> WhatsApp</a>
+          <a href="https://instagram.com/ezee_guzman730" class="contact-btn instagram-btn" target="_blank">Instagram</a>
+      </div>
+    </div>
     </section>
   </main>
 
@@ -174,7 +202,7 @@
   <!-- WhatsApp flotante -->
   <!-- WhatsApp flotante -->
 <!-- WhatsApp flotante -->
-<a href="https://wa.me/541234567890" target="_blank" class="whatsapp-fab">
+<a href="https://wa.me/543512301846" target="_blank" class="whatsapp-fab">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
 </a>
@@ -184,4 +212,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
