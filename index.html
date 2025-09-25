@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dazzling Beauty</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="logo.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="logo.png" alt="Dazzling Beauty logo" class="brand-logo">
+        <h1 class="brand-title">Dazzling Beauty</h1>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a href="#hero">Inicio</a>
+        <a href="#about">Sobre</a>
+        <a href="#services">Servicios</a>
+        <a href="#gallery">Galería</a>
+        <a href="#testimonials">Testimonios</a>
+        <a href="#contact">Reservá</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SIDE PANEL (mobile) -->
+  <div id="side-panel" class="side-panel" aria-hidden="true">
+    <nav class="side-nav">
+      <a href="#hero">Inicio</a>
+      <a href="#about">Sobre</a>
+      <a href="#services">Servicios</a>
+      <a href="#gallery">Galería</a>
+      <a href="#testimonials">Testimonios</a>
+      <a href="#contact">Reservá</a>
+    </nav>
+  </div>
+  <div id="panel-overlay" class="panel-overlay" hidden></div>
+
+  <!-- HERO -->
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <h2 class="hero-title">Brillá con confianza</h2>
+        <p class="hero-sub">Uñas, pestañas, cejas y alisados — tratamientos premium con resultados visibles.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#contact">Reservá tu turno</a>
+          <a class="btn btn-ghost" href="#services">Ver servicios</a>
+        </div>
+      </div>
+      <div class="hero-accent" aria-hidden="true"></div>
+    </section>
+
+    
+    <!-- ABOUT -->
+    
+    <section id="about" class="about container">
+    
+      <div class="about-grid">
+        <div class="about-text">
+          <h3>Sobre Dazzling Beauty</h3>
+          <p>"En <strong>Dazzling Beauty</strong> combinamos técnica, higiene y estilo para ofrecer servicios estéticos de alta calidad. Nuestro equipo está formado por profesionales certificados que cuidan cada detalle para que te lleves una experiencia única. Buen ambiente, productos profesionales y atencion personalizada segun tu estilo y necesidades."</p>
+  
+        </div>
+      </div>
+    </section>
+<hr class="divider-green">
+    <!-- SERVICES -->
+    <section id="services" class="services container">
+      <h3 class="section-title">Servicios</h3>
+      <p class="section-sub">Tratamientos diseñados para realzar tu belleza con resultados profesionales.</p>
+
+      <div class="cards">
+        <article class="card" data-aos="fade-up">
+          <div class="card-icon">💅</div>
+          <h4>Uñas Profesionales</h4>
+          <p>Manicuría y esmaltado semipermanente con técnicas de diseño personalizado. Durabilidad y acabado perfecto.</p>
+          <div class="card-meta">
+            <span class="tag">Desde $1200</span>
+            <a class="card-cta" href="#contact">Reservar</a>
+          </div>
+        </article>
+
+        <article class="card" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-icon">🌟</div>
+          <h4>Pestañas</h4>
+          <p>Extensiones, volumen ruso y lifting para una mirada intensa y natural. Productos hipoalergénicos.</p>
+          <div class="card-meta">
+            <span class="tag">Desde $1800</span>
+            <a class="card-cta" href="#contact">Reservar</a>
+          </div>
+        </article>
+
+        <article class="card" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-icon">✨</div>
+          <h4>Cejas</h4>
+          <p>Design, laminado y henna profesional para enmarcar tu rostro con precisión y estilo.</p>
+          <div class="card-meta">
+            <span class="tag">Desde $900</span>
+            <a class="card-cta" href="#contact">Reservar</a>
+          </div>
+        </article>
+
+        <article class="card" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-icon">💧</div>
+          <h4>Alisados</h4>
+          <p>Alisados progresivos y tratamientos nutritivos para un cabello sedoso y sin frizz por semanas.</p>
+          <div class="card-meta">
+            <span class="tag">Desde $4000</span>
+            <a class="card-cta" href="#contact">Reservar</a>
+          </div>
+        </article>
+      </div>
+    </section>
+<hr class="divider-green">
+    <!-- GALLERY BEFORE / AFTER -->
+    <section id="gallery" class="gallery container">
+      <h3 class="section-title">Trabajos realizados</h3>
+
+      <div class="before-after" id="beforeAfter">
+        <img src="img2.png" alt="Antes" class="ba-img ba-before">
+        <div class="ba-resizer" id="baResizer" aria-hidden="true"></div>
+        <img src="img1.png" alt="Después" class="ba-img ba-after">
+      </div>
+      <p class="small-note">Arrastrá la linea del medio.</p>
+      
+
+    </section>
+<hr class="divider-green">
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="testimonials container">
+      <h3 class="section-title">Testimonios</h3>
+      <div class="testi-track" id="testiTrack" aria-live="polite">
+        <blockquote class="testi">
+          <p>“Servicio impecable: mis pestañas quedaron increíbles y el trato fue muy profesional.”</p>
+          <cite>— Martina R.</cite>
+        </blockquote>
+        <blockquote class="testi">
+          <p>“Al fin un lugar donde respetan los tiempos y el resultado es de revista.”</p>
+          <cite>— Valeria S.</cite>
+        </blockquote>
+        <blockquote class="testi">
+          <p>“Mi clientela nota la diferencia: uñas duraderas y diseños top.”</p>
+          <cite>— Laura G.</cite>
+        </blockquote>
+      </div>
+    </section>
+<hr class="divider-green">
+    <!-- CONTACT / RESERVATION -->
+    <section id="contact" class="contact container">
+      <h3 class="section-title">Reservá tu turno</h3>
+      <p class="section-sub">Completá el formulario o enviános un WhatsApp y te confirmamos.</p>
+
+      <form id="reservaForm" class="reserva-form" aria-label="Formulario de reserva">
+        <div class="form-grid">
+          <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
+          <input type="tel" name="telefono" id="telefono" placeholder="Teléfono / WhatsApp" required>
+          <select name="servicio" id="servicio" required>
+            <option value="">Elige un servicio</option>
+            <option value="uñas">Uñas</option>
+            <option value="pestañas">Pestañas</option>
+            <option value="cejas">Cejas</option>
+            <option value="alisados">Alisados</option>
+          </select>
+          <input type="date" name="fecha" id="fecha" required>
+        </div>
+        <textarea name="mensaje" id="mensaje" rows="3" placeholder="Algún detalle extra (opcional)"></textarea>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Enviar reserva</button>
+          <a class="btn btn-ghost" href="https://wa.me/5493512955491" target="_blank" rel="noopener">Chatear por WhatsApp</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Dazzling Beauty</h4>
+        <p>&copy; Estética premium • Córdoba, Argentina</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <!-- WhatsApp flotante -->
+<!-- WhatsApp flotante -->
+<a href="https://wa.me/541234567890" target="_blank" class="whatsapp-fab">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+</a>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
